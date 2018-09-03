@@ -1,0 +1,19 @@
+{
+  "name": "grey-glitter",
+  "version": "0.1.0",
+  "description": "Playground for MithrilJS.",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --watch --mode development"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mithril": "1.1.6"
+  },
+  "devDependencies": {
+    "prettier": "1.14.2",
+    "webpack": "4.17.1",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "3.1.7"
+  }
+}
