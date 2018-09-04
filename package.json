@@ -8,9 +8,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "mithril": "1.1.6"
+    "mithril": "1.1.6",
+    "moment": "2.22.2"
   },
   "devDependencies": {
+    "@babel/core": "7.0.0",
+    "@babel/plugin-transform-react-jsx": "7.0.0",
+    "babel-loader": "8.0.2",
+    "dotenv": "6.0.0",
     "prettier": "1.14.2",
     "webpack": "4.17.1",
     "webpack-cli": "3.1.0",
