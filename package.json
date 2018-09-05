@@ -4,12 +4,13 @@
   "description": "Playground for MithrilJS.",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --watch --mode development"
+    "start": "webpack-dev-server --watch --mode development",
+    "precommit": "npm run build && git add target"
   },
   "license": "MIT",
   "dependencies": {
-    "mithril": "1.1.6",
-    "moment": "2.22.2"
+    "husky": "0.14.3",
+    "mithril": "1.1.6"
   },
   "devDependencies": {
     "@babel/core": "7.0.0",

@@ -1,5 +1,4 @@
 import m from "mithril"
-import moment from "moment"
 
 import { OpenDotaService } from "../services/open-dota"
 
@@ -19,13 +18,13 @@ export class MatchList {
               href={`https://www.opendota.com/matches/${match.match_id}`}
             >
               <small class="text-muted">
-                {moment.unix(match.start_time).format("DD.MM.YYYY")}
+                {new Date(match.start_time * 1000).toLocaleDateString()}
                 &nbsp;
-                {moment.unix(match.start_time).format("HH:mm:ss")}
+                {new Date(match.start_time * 1000).toLocaleTimeString()}
               </small>
             </a>
             <span class="align-self-end">
-              <small class="text-muted">{this.isMatchAWin(match) ? "WIN" : "LOSS"}</small>
+              <small>{this.isMatchAWin(match) ? <div>&#x1F917;</div> : <div>&#x1F621;</div>}</small>
             </span>
           </li>
         ))}
