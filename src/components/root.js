@@ -7,8 +7,8 @@ export class Root {
   view() {
     return (
       <div
-        class="container d-flex flex-column h-100 justify-content-center"
-        style="max-width: 768px;"
+        class="container d-flex flex-column justify-content-center my-3"
+        style="min-height: 100vh;"
       >
         <UserList />
         <MatchList />

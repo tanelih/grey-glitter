@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "target"),
     filename: "app.bundle.js",
-    publicPath: "/target/"
+    publicPath: "/grey-glitter/target/"
   },
   module: {
     rules: [{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }]

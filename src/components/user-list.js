@@ -9,7 +9,7 @@ export class UserList {
   }
   view() {
     return (
-      <div class="card p-3 my-3">
+      <div class="card p-3 mb-3">
         <div class="card-deck w-100 justify-content-center align-self-center">
           {OpenDotaService.users
             .sort((a, b) => a.mmr_estimate.estimate - b.mmr_estimate.estimate)
